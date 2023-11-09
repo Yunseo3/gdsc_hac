@@ -27,14 +27,12 @@ public class Mmap{
     private Double longitude;
     private Double latitude;
 
-    // 생성자
-//    public Mmap() {
-//    }
+    // 생성자 -> 기본 생성자는 필수
+    public Mmap() {
+    }
 
-    public Mmap(int id, String sido, String sigungu, String agencyname, String address, String location,
+    public Mmap(String sido, String sigungu, String agencyname, String address, String location,
                      String phoneNumber, String target, String fatherUsage, Double longitude, Double latitude) {
-        
-    	this.id =id;
         this.sido = sido;
         this.sigungu = sigungu;
         this.agencyname = agencyname;

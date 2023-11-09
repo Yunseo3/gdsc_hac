@@ -21,6 +21,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
 	//runtimeOnly 'com.mysql:mysql-conncector-j'
+	runtimeOnly 'com.h2database:h2' // H2
+	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33' // MYSQL
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 }
